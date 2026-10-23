@@ -1,0 +1,6 @@
+{
+  "name": "Hero of Python — منصة بطل بايثون والتقنية الرقمية | أ/ محمد جبريل",
+  "description": "Hero of Python — منصة تفاعلية احترافية لتعلم بايثون والتقنية الرقمية والذكاء الاصطناعي - إعداد وإشراف أ/ محمد جبريل، معلم التقنية الرقمية بمدارس النخبة العلمية الأهلية بالدمام",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

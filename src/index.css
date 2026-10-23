@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #059669;
+    --color-primary-light: #34d399;
+    --color-primary-dark: #064e3b;
+    --color-accent: #f59e0b;
+  }
+
+  html {
+    font-family: 'Cairo', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, kbd, textarea[dir="ltr"] {
+    font-family: 'JetBrains Mono', 'Cairo', monospace, system-ui;
+    direction: ltr !important;
+    text-align: left !important;
+    unicode-bidi: plaintext !important;
+  }
+
+  .font-mono, [class*="font-mono"] {
+    font-family: 'JetBrains Mono', 'Cairo', monospace, system-ui !important;
+  }
+}
+
+/* Custom Scrollbar for Terminals & Modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print Rules for Certificates */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  header, footer, nav, button {
+    display: none !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out forwards;
+}
